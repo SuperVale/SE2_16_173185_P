@@ -93,4 +93,8 @@ app.post('/3', function(req, res)
 
 var jsdom = require("jsdom");
 
-app.listen(5000);
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
