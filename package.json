@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consolidate": "^0.14.5",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "jsdom": "^9.8.3",
+    "http": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperVale/SE2_16_173185_P.git"
+  },
+  "author": "vale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperVale/SE2_16_173185_P/issues"
+  },
+  "homepage": "https://github.com/SuperVale/SE2_16_173185_P#readme"
+}
