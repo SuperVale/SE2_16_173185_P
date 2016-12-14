@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Ordine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/script/index.js"></script>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
+        .w3-sidenav a {padding:20px}
+    </style>
+</head>
+
+<body>
+    
+<!-- Sidenav (hidden by default) -->
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidenav">
+  <a href="javascript:void(0)" onclick="toggle('mySidenav')" class="w3-closenav">Close Menu</a>
+    <form class="w3-container">
+      <label class="w3-label w3-text-grey">Username</label>
+      <input class="w3-input w3-border w3-light-grey" type="text">
+      <label class="w3-label w3-text-grey">Password</label>
+      <input class="w3-input w3-border w3-light-grey" type="password">
+    </form>
+    <a href="javascript:void(0)" onclick="toggle('mySidenav')">Login</a>
+    <a href="javascript:void(0)" onclick="toggle('mySidenav')">Logout</a>
+</nav>
+
+<!-- Sidenav (hidden by default) -->
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-right" style="display:none;z-index:2;width:40%;min-width:300px;right:0" id="myInfo">
+  <a href="javascript:void(0)" onclick="toggle('myInfo')" class="w3-closenav">Close Menu</a>
+    <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About this page</h3>
+    <div class="w3-padding-32">
+      <h4><b>Here in this page you can...</b></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum enim et lacinia rutrum. Sed orci nulla, semper vel feugiat sit amet, tincidunt at enim. Maecenas id turpis sit amet leo auctor ultricies. Maecenas blandit iaculis turpis, nec ornare lorem bibendum id. Mauris ex tortor, elementum ut dignissim eu, aliquam vitae tellus. Maecenas ac massa quis risus aliquet blandit sed vel risus. Nam viverra nulla tincidunt tristique imperdiet.</p>
+    </div>
+  </div>
+  <hr>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-blue w3-xlarge w3-padding-medium" style="max-width:1200px; margin:auto">
+    <div class="w3-opennav w3-left w3-hover-text-grey" onclick="toggle('mySidenav')"><i class="fa fa-bars"></i></div>
+    <div class="w3-opennav w3-right w3-hover-text-grey" onclick="toggle('myInfo')"><i class="fa fa-info-circle"></i></div>
+    <div class="w3-center">Menu</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:60px;margin-bottom:20px">
+    
+<!-- Trigger/Open the Modal -->
+
+<!-- The Modal -->
+<div id="confirm" class="w3-modal">
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue"> 
+   <span onclick="document.getElementById('confirm').style.display='none'" 
+   class="w3-closebtn w3-padding-top">&times;</span>
+   <h2>Conferma</h2>
+  </header>
+     <p>Desideri confermare l'ordine?</p>
+  <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-btn w3-right w3-white w3-border" 
+   onclick="next_3()">Conferma</button>
+  </div>
+ </div>
+</div>
+
+
+<input id="opt1" class="w3-check" type="checkbox">
+<label class="w3-validate">Pasto Freddo</label><br>
+
+<input id="opt2" class="w3-check" type="checkbox">
+<label class="w3-validate">Invia a domicilio</label>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+
+  </footer>
+
+</div>
+
+<!-- Nav Bar -->
+<div class="w3-bottom">
+  <div class="w3-blue w3-large w3-padding-medium" style="max-width:1200px; margin:auto">
+    <div onclick = "prev_3()" class="w3-opennav w3-left w3-hover-text-grey"><i class="fa fa-arrow-left"></i> Indietro</div>
+    <div onclick="document.getElementById('confirm').style.display='block'" class="w3-opennav w3-right w3-hover-text-grey">Avanti <i class="fa fa-arrow-right"></i></div>
+    <div class="w3-center">3/3</div>
+  </div>
+    <div class="w3-progress-container" style="max-width:1200px; margin:auto">
+    <div class="w3-progressbar" style="width:100%"></div>
+  </div>
+</div>
+
+<!-- End page content -->
+
+</body>
+</html>
